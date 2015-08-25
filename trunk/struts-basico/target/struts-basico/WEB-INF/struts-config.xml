@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="saludoForm"
+			type="forms.SaludoForm" />
+	</form-beans>
+	<form-beans>
+		<form-bean name="libroForm"
+			type="forms.LibroForm" />
+	</form-beans>
+	<form-beans>
+		<form-bean name="clubForm"
+			type="forms.ClubForm" />
+	</form-beans>
+	<action-mappings>
+		<action path="/helloWorld"
+			type="actions.SaludoAction" input="/helloWorldStruts.jsp"
+			name="saludoForm" scope="request" validate="true">
+			<forward name="ok" path="/hello.jsp" />
+			<forward name="conocido" path="/usuarioConocido.jsp" />
+		</action>
+	</action-mappings>
+	<action-mappings>
+		<action path="/helloBook"
+			type="actions.LibroAction" input="/helloWorldStruts.jsp"
+			name="libroForm" scope="request" validate="true">
+			<forward name="ta" path="/ta.jsp" />
+			<forward name="noTa" path="/noTa.jsp" />
+		</action>
+	</action-mappings>
+	<action-mappings>
+		<action path="/helloClub"
+			type="actions.ClubAction" input="/club.jsp"
+			name="clubForm" scope="request" validate="true">
+			<forward name="mayor" path="/mayor.jsp" />
+			<forward name="menor" path="/menor.jsp" />
+			<forward name="anciano" path="/anciano.jsp" />
+		</action>
+	</action-mappings>
+	<message-resources parameter="Traducciones" null="false" />
+</struts-config>

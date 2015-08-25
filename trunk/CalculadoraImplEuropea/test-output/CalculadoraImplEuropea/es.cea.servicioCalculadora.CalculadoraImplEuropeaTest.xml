@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="es.cea.servicioCalculadora.CalculadoraImplEuropeaTest" failures="0" tests="1" time="0.015" errors="0">
+  <properties/>
+  <testcase name="pruebaCalculadoraEuropea" time="0.015" classname="es.cea.servicioCalculadora.CalculadoraImplEuropeaTest"/>
+</testsuite>

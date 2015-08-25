@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eticom-club-struts-basico">
+  <test verbose="2" name="eticom.club.dao.ConectaHibernateTest" annotations="JDK">
+    <classes>
+      <class name="eticom.club.dao.ConectaHibernateTest"/>
+    </classes>
+  </test>
+</suite>
